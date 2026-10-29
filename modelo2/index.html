@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <h1>
+            ⭒ Obras Famosas ⭒
+        </h1>
+    </header>
+    <main class="galeria">
+            <img src="assets/vangogh.jpg" alt="Amendoeira em Flor - Van Gogh" class="miniatura grande" tabindex="0">
+            <img src="assets/noiteEstrelada.jpg" alt="Noite Estrelada - Van Gogh" class="miniatura horizontal" tabindex="0">
+            <img src="assets/salvadorDali.jpg" alt="A Persistência da Memória - Salvador Dali" class="miniatura" tabindex="0">
+            <img src="assets/mulherComPerola.jpg" alt="Moça com Brinco de Pérola -  Johannes Vermeer" class="miniatura" tabindex="0">
+            <img src="assets/girassol.jpg" alt="Girassol - Van Gogh" class="miniatura" tabindex="0">
+            <img src="assets/Jardim em Arles.jpg" alt="Jardim De Arles - Van Gogh" class="miniatura horizontal" tabindex="0">
+            <img src="assets/LosLiriosdeVanGogh.jpg" alt="Los Lirios - Van Gogh" class="miniatura" tabindex="0">
+    </main>
+
+    <div id="modal" class="modal" role="dialog" aria-modal="true" aria-label="Visualizador De Imagem" aria-hidden="true">
+        <button id="fechar" class="fechar" aria-label="Fechar Imagem">
+            &times;
+        </button>
+
+        <button id="anterior" class="navegacao anterior" aria-label="Imagem anterior">
+            &#10094;
+        </button>
+
+        <div class="modal-conteudo">
+            <img src="" alt="" id="ImagemModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+        </div>
+
+        <button id="proximo" class="navegacao proximo" aria-label="Proxima imagem">
+            &#10095;
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

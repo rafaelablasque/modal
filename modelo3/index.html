@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>
+            ♡ Livros ♡ 
+        </h1>
+        <p>
+            Explore Os Livros Por Genêro
+        </p>
+    </header>
+    <nav class="filtros">
+        <button class="filtro ativo" data-filtro="todas">
+            Todas
+        </button>
+        <button class="filtro" data-filtro="romance">
+            Romance
+        </button>
+        <button class="filtro" data-filtro="fantasia">
+            Fantasia
+        </button>
+        <button class="filtro" data-filtro="suspense">
+            Suspense
+        </button>
+    </nav>
+
+    <p id="totalImagem" class="total"></p>
+
+    <main class="galeria">
+        <img src="assets/aHipoteseDoAmor.jpg" alt="A Hipotese do Amor" class="miniatura destaque" data-categoria="romance" tabindex="0">
+        <img src="assets/amorteoricamente.jpg" alt="Amor, Teoricamente" class="miniatura " data-categoria="romance" tabindex="0">
+        <img src="assets/melhorDoqueNosFilmes.jpg" alt="Melhor Do que Nos Filmes" class="miniatura " data-categoria="romance" tabindex="0">
+        <img src="assets/naoEcomoNosfilmes.jpg" alt="Não é Como nos Filmes" class="miniatura" data-categoria="romance" tabindex="0">
+
+        <img src="assets/eraUmaVezUmCoracaoPartido.jpg" alt="Era Uma Vez Um Coração Partido" class="miniatura horizontal" data-categoria="fantasia" tabindex="0">
+        <img src="assets/A balada do felizes para nunca.jpg" alt="A Balada Do Felizes Para Nunca" class="miniatura " data-categoria="fantasia" tabindex="0">
+        <img src="assets/aMaldicaoDoVerdadeiroAmor.jpg" alt="A Maldição Do Verdadeiro Amor" class="miniatura horizontal" data-categoria="fantasia" tabindex="0">
+        <img src="assets/TheMirrorOfInfiniteEndings.jpg" alt="A Balada Do Felizes Para Nunca" class="miniatura vertical" data-categoria="fantasia" tabindex="0">
+
+        <img src="assets/JantarSecreto.jpg" alt="Jantar Secreto" class="miniatura horizontal" data-categoria="suspense" tabindex="0">
+        <img src="assets/diasPerfeitos.jpg" alt="Dias Perfeitos" class="miniatura " data-categoria="suspense" tabindex="0">
+        <img src="assets/oMassacreDaFamiliaHope.jpg" alt="O Massacre Da Familia Hope" class="miniatura " data-categoria="suspense" tabindex="0">
+    </main>
+
+    <div id="modal" class="modal">
+        <button id="fechar" class="fechar">&times;</button>
+        <button id="anterior" class="navegacao anterior">&#10094;</button>
+        <div class="modal-conteudo">
+            <img src="" alt="" id="imagemModal">
+            <div class="legenda">
+                <span id="contador"></span>
+                <span id="nomeImagem"></span>
+            </div>
+        </div>
+        <button id="proximo" class="navegacao proximo">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
